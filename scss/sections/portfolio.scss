@@ -1,0 +1,39 @@
+@use '../colors/colors' as *;
+
+.portfolio {
+    padding: 40px 0;
+
+    h2 {
+        color: #f0e5fa; 
+        margin-bottom: 20px; 
+    }
+
+    .job1, .job2, .job3 {
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 20px; 
+        color: #f0e5fa; 
+        background-color: $primary;
+        height: 40vh;
+
+        img {
+            margin: 20px; 
+            max-width: 100%; 
+            height: auto; 
+            width: 250px; 
+        }
+
+        p {
+            flex-grow: 1;
+            margin: auto; 
+        }
+    }
+
+    .job2 {
+        flex-direction: row-reverse;
+
+        p {
+            margin-left: 2%;
+        }
+    }
+}
