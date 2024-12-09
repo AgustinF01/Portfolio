@@ -1,0 +1,29 @@
+@use '../colors/colors' as *;
+
+.AboutMe {
+    display: grid;
+    background-color: $primary;
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 15%;
+    
+    align-items: center;
+    justify-content: center;
+
+    .about-title {
+        text-align: center;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: row;
+        margin: 0 5% 0 5%;
+        height: 30vh;
+
+        img {
+            width: 250px;
+            height: auto;
+        }
+    }
+}

@@ -1,10 +1,11 @@
-@use './components/ProgressBar';
 @use './components/NavBar';
 @use './colors/colors' as *;
 @use './sections/portfolio';
+@use './sections/skills';
 @use './components/ScrollToTopBtn';
 @use './components/Whatsapp';
 @use './sections/contact';
+@use './sections/AboutMe';
 
 * {
   margin: 0;
