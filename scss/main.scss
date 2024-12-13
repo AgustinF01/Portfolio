@@ -18,6 +18,8 @@
 body {
   background-color: $background;
   color: $text;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 
   .bg-cover {
     width: 100%;
@@ -26,10 +28,17 @@ body {
 
     .titles {
       margin-top: 5%;
-      font-size: 25px;
+      
+      h1 {
+        font-size: 100px;
+        text-align: left;
+      }
 
       h2 {
-        font-size: 20px;
+        font-size: 100px;
+        text-align: left;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
       }
     }
 

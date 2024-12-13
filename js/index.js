@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function checkScroll() {
-        const abilitiesSection = document.querySelector('.habilities');
+        const abilitiesSection = document.querySelector('.portfolio');
         const sectionPosition = abilitiesSection.getBoundingClientRect().top;
         const screenPosition = window.innerHeight;
 
@@ -99,10 +99,32 @@ document.addEventListener('DOMContentLoaded', function () {
     background.classList.add('animated-background');
     document.body.appendChild(background);
 
+    const maxLines = 20; // Límite de líneas de código
+    let currentLines = 0;
+    let usedLines = new Set();
+
     function createCodeLine() {
+        if (currentLines >= maxLines) {
+            // Elimina la línea más antigua si se alcanza el límite
+            const oldestLine = background.children[0];
+            oldestLine.remove();
+            currentLines--;
+        }
+
+        const randomIndex = Math.floor(Math.random() * codeLines.length);
+        const lineText = codeLines[randomIndex];
+
+        if (usedLines.has(lineText)) {
+            // Si la línea ya se ha utilizado, intenta de nuevo
+            createCodeLine();
+            return;
+        }
+
+        usedLines.add(lineText);
+
         const line = document.createElement('div');
         line.classList.add('code-line');
-        line.textContent = codeLines[Math.floor(Math.random() * codeLines.length)];
+        line.textContent = lineText;
         
         // Posiciona la línea en la parte inferior de la pantalla
         line.style.top = Math.random() * window.innerHeight + 'px';
@@ -119,11 +141,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Elimina la línea después de que la animación termine
         line.addEventListener('animationend', () => {
             line.remove();
+            currentLines--;
         });
+
+        currentLines++;
     }
 
     // Genera una nueva línea de código cada 1 segundo
     setInterval(createCodeLine, 1000);
 });
-
-//-------------------------------------------
