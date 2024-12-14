@@ -13,9 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!------------>
     <!-- SCRIPTS -->
     <script src="./js/index.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
@@ -25,7 +30,7 @@
 
 <body class="container-fluid --bs-tertiary-bg">
 
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Agustin Farias</a>
@@ -44,13 +49,13 @@
         </nav>
     </header>
 
-    <section class="bg-cover">
+    <section class="bg-cover" data-aos="fade-right">
         <div class="titles">
-            <h1>Agustin Farias</h1>
-            <h2>Junior Web Developer</h2>
+            <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">Agustin Farias</h1>
+            <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">Junior Web Developer</h2>
         </div>
 
-        <div class="arrow">
+        <div class="arrow" data-aos-delay="1000">
             <span></span>
             <span></span>
             <span></span>
@@ -59,27 +64,39 @@
 
     <section class="portfolio" id="works">
         <div class="container">
-            <h2 class="text-center mb-4">My Portfolio</h2>
+            <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1500">My Portfolio</h2>
 
-            <div class="job1">
-                <img src="./assets/img1.jpg" alt="Imagen1" class="img-fluid">
-                <h2>Web Development Project</h2>
-                <p>Here I applied the knowledge learned about web development using sass/css for styles, javascript for interactivity and applied what I learned about SEO for positioning, ending with a deployment in Vercel.</p>
+            <div class="job1" data-aos="fade-right" data-aos-duration="1500">
+                <div class="job1-img" data-aos="fade-right" data-aos-duration="1900">
+                    <img src="./assets/img1.jpg" alt="Imagen1" class="img-fluid">
+                </div>
+                <div class="job1-text" data-aos="fade-right" data-aos-duration="1600">
+                    <h2>Web Development Project</h2>
+                    <p>Here I applied the knowledge learned about web development using sass/css for styles, javascript for interactivity and applied what I learned about SEO for positioning, ending with a deployment in Vercel.</p>
+                </div>             
             </div>
 
-            <div class="job2">
-                <img src="./assets/img1.jpg" alt="Imagen2" class="img-fluid">
-                <h2>React Project</h2>
-                <p>In this project I made more complex use of javascript and I became familiar with the React development environment using Vite for the project as well as the use of libraries such as MaterialUI for a better finish.<br>I applied what i learned using components, states, rendering, routing, events, as well as the use of Firebase for the operation of the store to finish in a deployment in Vercel.</p>
+            <div class="job2" data-aos="fade-left" data-aos-duration="1500">
+                <div class="job2-img" data-aos="fade-left" data-aos-duration="1900">
+                    <img src="./assets/img1.jpg" alt="Imagen2" class="img-fluid">
+                </div>
+                <div class="job2-text" data-aos="fade-left" data-aos-duration="1600">
+                    <h2>React Project</h2>
+                    <p>In this project I made more complex use of javascript and I became familiar with the React development environment using Vite for the project as well as the use of libraries such as MaterialUI for a better finish.<br>I applied what i learned using components, states, rendering, routing, events, as well as the use of Firebase for the operation of the store to finish in a deployment in Vercel.</p>
+                </div>
             </div>
 
-            <div class="job3">
-                <img src="./assets/img1.jpg" alt="Imagen3" class="img-fluid">
-                <h2>Backend Project</h2>
-                <p>COMING SOON</p>
+            <div class="job3" data-aos="fade-right" data-aos-duration="1500">
+                <div class="job3-img" data-aos="fade-right" data-aos-duration="1900">
+                    <img src="./assets/img1.jpg" alt="Imagen3" class="img-fluid">
+                </div>
+                <div class="job3-text" data-aos="fade-right" data-aos-duration="1600">
+                    <h2>Backend Project</h2>
+                    <p>COMING SOON</p>
+                </div>
             </div>
 
-            <h2 class="text-center">Contact me for work</h2>
+            <h2 class="text-center" data-aos="fade-up" data-aos-duration="1500">Contact me for work</h2>
         </div>
     </section>
 

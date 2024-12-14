@@ -1,22 +1,22 @@
-@use '../colors/colors' as *; // Asegúrate de que esto esté al principio
+@use '../colors/colors' as *; 
 
 header {
   .navbar {
-    background-color: $background; // Aplica el color de fondo al menú
+    background-color: $background; 
 
     .container-fluid {
       display: flex;
-      justify-content: space-between; // Espacia los elementos a los extremos
+      justify-content: space-between;
 
       .navbar-brand {
         color: $text;
-        margin-right: auto; // Mueve el navbar-brand a la izquierda
+        margin-right: auto; 
       }
 
       .navbar-nav {
         display: flex;
-        justify-content: flex-end; // Alinea los nav-links a la derecha
-        gap: 10px; // Espacio entre los enlaces
+        justify-content: flex-end; 
+        gap: 10px; 
 
         .nav-link {
             color: $text;

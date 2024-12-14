@@ -8,32 +8,87 @@
         margin-bottom: 20px; 
     }
 
-    .job1, .job2, .job3 {
+    .job1 {
         display: flex; 
         align-items: center; 
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         color: #f0e5fa; 
         background-color: $primary;
         height: 40vh;
 
-        img {
-            margin: 20px; 
-            max-width: 100%; 
-            height: auto; 
-            width: 250px; 
+        .job1-img {
+            img {
+                margin-left: 50px; 
+                max-width: 100%; 
+                height: 150px; 
+                width: 250px; 
+            }
         }
 
-        p {
-            flex-grow: 1;
-            margin: auto; 
+        .job1-text {
+            margin-left: 80px;
+            margin-right: 17px;
+            p {
+                flex-grow: 1;
+                margin: auto; 
+            }
         }
     }
 
     .job2 {
+        display: flex; 
+        align-items: center; 
         flex-direction: row-reverse;
+        margin-bottom: 20px; 
+        color: #f0e5fa; 
+        background-color: $primary;
+        height: 40vh;
+        overflow-x: hidden;
 
-        p {
-            margin-left: 2%;
+        .job2-img {
+            img {
+                margin-right: 100px;
+                padding-right: 50px;
+                max-width: 100%; 
+                height: 150px; 
+                width: 300px; 
+            }
+        }
+
+        .job2-text {
+            margin-left: 17px;
+            margin-right: 40px;
+            p {
+                flex-grow: 1;
+                margin: auto; 
+            }
+        }
+    }
+
+    .job3 {
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 20px;
+        color: #f0e5fa; 
+        background-color: $primary;
+        height: 40vh;
+
+        .job3-img {
+            img {
+                margin-left: 50px; 
+                max-width: 100%; 
+                height: 150px; 
+                width: 200px; 
+            }
+        }
+
+        .job3-text {
+            margin-left: 80px;
+            margin-right: 17px;
+            p {
+                flex-grow: 1;
+                margin: auto; 
+            }
         }
     }
 }

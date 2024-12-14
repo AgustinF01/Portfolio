@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // -----------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+});
 
 // To top button
 // Define la función en el ámbito global
@@ -107,16 +110,18 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentLines >= maxLines) {
             // Elimina la línea más antigua si se alcanza el límite
             const oldestLine = background.children[0];
-            oldestLine.remove();
-            currentLines--;
+            if (oldestLine) {
+                oldestLine.remove();
+                currentLines--;
+            }
         }
 
         const randomIndex = Math.floor(Math.random() * codeLines.length);
         const lineText = codeLines[randomIndex];
 
+        // Verifica si la línea ya se ha utilizado
         if (usedLines.has(lineText)) {
-            // Si la línea ya se ha utilizado, intenta de nuevo
-            createCodeLine();
+            // Si la línea ya se ha utilizado, simplemente salimos de la función
             return;
         }
 
@@ -142,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
         line.addEventListener('animationend', () => {
             line.remove();
             currentLines--;
+            usedLines.delete(lineText); // Permite que la línea se vuelva a usar
         });
 
         currentLines++;
