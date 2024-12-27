@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- STYLES -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!------------>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!------------------------------------------------------------------>
+
     <!-- SCRIPTS -->
+
     <script src="./js/index.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -24,14 +28,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
-    <!------------->
-    <title>Agustin Farias - Web Developer</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!----------------------------------------------------------------->
+
+    <title>Agustin Farias - Desarrollador Web</title>
+
 </head>
 
 <body class="container-fluid --bs-tertiary-bg">
 
-    <header data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
-        <nav class="navbar navbar-expand-lg">
+    <header data-aos="fade-down" data-aos-duration="2500" data-aos-delay="500">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Agustin Farias</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -40,22 +49,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link" aria-current="page" href="#works">Portfolio</a>
-                        <a class="nav-link" href="#info">About Me</a>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" aria-current="page" href="#works">Portafolio</a>
+                        <a class="nav-link" href="#info">Sobre Mi</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
+
+        
     </header>
 
-    <section class="bg-cover" data-aos="fade-right">
+    <section class="bg-cover" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">
         <div class="titles">
-            <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">Agustin Farias</h1>
-            <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">Junior Web Developer</h2>
+            <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Agustin Farias</h1>
+            <h2 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">Desarrollador Web</h2>
         </div>
 
-        <div class="arrow" data-aos-delay="1000">
+        <div class="arrow">
             <span></span>
             <span></span>
             <span></span>
@@ -64,57 +75,96 @@
 
     <section class="portfolio" id="works">
         <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1500">My Portfolio</h2>
+            <h2 class="text-center mb-4" data-aos="fade-up" data-aos-duration="1500">Mi Portafolio</h2>
 
-            <div class="job1" data-aos="fade-right" data-aos-duration="1500">
-                <div class="job1-img" data-aos="fade-right" data-aos-duration="1900">
-                    <img src="./assets/img1.jpg" alt="Imagen1" class="img-fluid">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <div class="card h-100 job1">
+                        <img src="./assets/bekus-preview.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Proyecto de desarrollo web</h5>
+                            <p class="card-text">Aplicando lo aprendido hasta el momento, desarrolle un sitio web para
+                                un
+                                artista gráfico como solución a su problema para tener más alcance y la necesidad de un
+                                portafolio solido donde mostrar sus trabajos y ofrecer sus servicios. El mismo esta
+                                desarrollado
+                                utilizando sass/css para los estilos, javascript para funcionalidades basicas y
+                                diferentes
+                                librerias entre fuentes y animaciónes asi como ajustes para el posicionamiento SEO.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://bekus.vercel.app/" target="_blank">Ver Página</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="job1-text" data-aos="fade-right" data-aos-duration="1600">
-                    <h2>Web Development Project</h2>
-                    <p>Here I applied the knowledge learned about web development using sass/css for styles, javascript for interactivity and applied what I learned about SEO for positioning, ending with a deployment in Vercel.</p>
-                </div>             
+
+                <div class="col" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <div class="card h-100 job2">
+                        <img src="./assets/react-preview.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Proyecto React</h5>
+                            <p class="card-text">Este proyecto se basa en una SPA (Single Page Aplication) simulando la
+                                estructura y funcionalidad de un e-commerce. Entre sus funciones se encuentran: Muestra
+                                dinámica
+                                del contenido en una sola página, sistema de carrito personalizable, paginación, sistema
+                                de
+                                filtrado de productos y un sistema de checkout que devuelve los datos de compra y un
+                                ticket.
+                                Todo esto funcionando de manera asincrónica e interactuando con una base de datos en
+                                Firebase,
+                                actualizando el stock de productos en base a la ventas y el almacenamiento de los datos
+                                de
+                                compra de los usuarios.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://proyecto-final-react-farias.vercel.app/" target="_blank"
+                                class="card-text text-center">Ver Página</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="card h-100 job3">
+                        <img src="./assets/back-preview.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Proyecto Backend</h5>
+                            <p class="card-text">Este proyecto esta pensado para implementar el funcionamiento backend
+                                básico
+                                para un e-commerce, centrandose mas en las funcionalidades que los estilos. El mismo
+                                está
+                                desarrollado utilizando Node.js y Express para el backend, y MongoDB como base de datos
+                                para
+                                almacenar información sobre productos y carritos de compras. El mismo funciona de manera local pero se puede observar el codigo libremente en el repositorio del proyecto donde se incluyen las colecciones de la base de datos.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/AgustinF01/FinalBack-Farias" target="_blank">Ver Página</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="job2" data-aos="fade-left" data-aos-duration="1500">
-                <div class="job2-img" data-aos="fade-left" data-aos-duration="1900">
-                    <img src="./assets/img1.jpg" alt="Imagen2" class="img-fluid">
-                </div>
-                <div class="job2-text" data-aos="fade-left" data-aos-duration="1600">
-                    <h2>React Project</h2>
-                    <p>In this project I made more complex use of javascript and I became familiar with the React development environment using Vite for the project as well as the use of libraries such as MaterialUI for a better finish.<br>I applied what i learned using components, states, rendering, routing, events, as well as the use of Firebase for the operation of the store to finish in a deployment in Vercel.</p>
-                </div>
-            </div>
-
-            <div class="job3" data-aos="fade-right" data-aos-duration="1500">
-                <div class="job3-img" data-aos="fade-right" data-aos-duration="1900">
-                    <img src="./assets/img1.jpg" alt="Imagen3" class="img-fluid">
-                </div>
-                <div class="job3-text" data-aos="fade-right" data-aos-duration="1600">
-                    <h2>Backend Project</h2>
-                    <p>COMING SOON</p>
-                </div>
-            </div>
-
-            <h2 class="text-center" data-aos="fade-up" data-aos-duration="1500">Contact me for work</h2>
         </div>
     </section>
 
     <section class="AboutMe" id="info">
-        <div class="about-title">
-            <h2>Want to know more about me?</h2>
+        <div class="about-title" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+            <h2>¿Quieres saber mas de mí?</h2>
         </div>
 
-        <div class="about-info">
-            <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem reprehenderit, facilis ipsa fugit,
-                    cupiditate at similique eaque eligendi corporis, pariatur deserunt in vel optio repellendus
-                    quibusdam cumque ullam id tempore!</p>
+        <div class="about-info" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+            <div class="about-text">
+                <p>Soy un desarrollador web full stack junior apasionado por crear soluciones digitales eficientes y
+                    funcionales. Manejo tecnologías modernas como Sass, React, MongoDB, Node y Express, lo que me
+                    permite abordar tanto el front-end como el back-end. Integro herramientas de inteligencia artificial
+                    en mi flujo de trabajo para optimizar procesos y garantizar resultados de alta calidad en menor
+                    tiempo. Mi experiencia como tester QA tambien me permite tener el punto de vista de un usuario y asi
+                    poder aplicarlo al desarrollo para mejorar los resultados finales. Estoy comprometido con el
+                    aprendizaje continuo y la innovación para ofrecer siempre lo mejor en cada proyecto.</p>
             </div>
 
             <div class="skill-container">
                 <div class="container">
-                    <div class="skill-box">
+                    <div class="skill-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                         <span class="title">CSS/SASS</span>
 
                         <div class="skill-bar">
@@ -124,7 +174,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-box">
+                    <div class="skill-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                         <span class="title">Testing QA</span>
 
                         <div class="skill-bar">
@@ -134,7 +184,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-box">
+                    <div class="skill-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                         <span class="title">REACT</span>
 
                         <div class="skill-bar">
@@ -144,8 +194,8 @@
                         </div>
                     </div>
 
-                    <div class="skill-box">
-                        <span class="title">MongoDB</span>
+                    <div class="skill-box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <span class="title">Back-end</span>
 
                         <div class="skill-bar">
                             <span class="skill-per mongo">
@@ -160,12 +210,12 @@
 
     <section class="contact" id="contact">
 
-        <div>
-            <h2>Contact Media</h2>
+        <div data-aos="fade-up" data-aos-duration="500">
+            <h2>Mis redes</h2>
         </div>
 
-        <div class="card">
-            <a class="socialContainer containerOne" href="#">
+        <div class="card" data-aos="zoom-in" data-aos-duration="500">
+            <a class="socialContainer containerOne" href="https://github.com/AgustinF01" target="_blank" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="100">
                 <svg viewBox="0 0 16 16" class="socialSvg instagramSvg">
                     <path
                         d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
@@ -173,7 +223,8 @@
                 </svg>
             </a>
 
-            <a class="socialContainer containerThree" href="#">
+            <a class="socialContainer containerThree" href="https://www.linkedin.com/in/agustin-farias-tester-qa/"
+                target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                 <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
                     <path
                         d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
@@ -181,7 +232,7 @@
                 </svg>
             </a>
 
-            <a class="socialContainer containerFour" href="#">
+            <a class="socialContainer containerFour" href="https://wa.me/5492616490957" target="_blank" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="300">
                 <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg">
                     <path
                         d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
@@ -190,42 +241,109 @@
             </a>
         </div>
 
-        <div><h2>Or</h2></div>
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h2>O</h2>
+        </div>
 
-        <div class="form-container">
-            <form class="form">
+        <div class="form-container" data-aos="fade-up" data-aos-duration="1500">
+            <form class="form" id="contact-form">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required="">
                 </div>
-        
+
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required="">
                 </div>
-        
+
                 <div class="form-group">
-                    <label for="subject">Subject</label>
+                    <label for="subject">Asunto</label>
                     <input type="text" id="subject" name="subject" required="">
                 </div>
-        
-                <div class="form-group">
-                    <label for="textarea">How Can I Help You?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
-                </div>
-                
-                <button class="form-submit-btn" type="submit">Submit</button>
-            </form>
-        </div>
 
+                <div class="form-group">
+                    <label for="message">¿En que puedo ayudarte?</label>
+                    <textarea name="message" id="message" rows="10" cols="50" required=""></textarea>
+                </div>
+
+                <!-- Limite de 50kbs por archivo -->
+                <!-- <div class="form-group">
+                    <label for="documents">Cargar archivo</label>
+                    <input type="file" id="documents" name="documents">
+                </div> -->
+
+                <!-- Se necesita un dominio -->
+                <!-- <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+                    data-action='submit'>Submit</button> -->
+
+                <button class="form-submit-btn" type="submit">Enviar</button>
+
+        </div>
 
     </section>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; Agustin Farias - 2024</p>
     </footer>
 
-    <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <!-- <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">↑</button> -->
+
+    <!-- Alert de Bootstrap -->
+    <div id="bootstrapAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+        ¡Enviado con éxito!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("9FLXyAjwErZFaHaUM"); // Reemplaza 
+        })();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault(); // Evita el envío normal del formulario
+
+                // Envía el formulario usando EmailJS
+                emailjs.sendForm('service_hm52te9', 'template_88uz8v9', this)
+                    .then((response) => {
+                        console.log('SUCCESS!', response);
+                        const alertEl = document.getElementById('bootstrapAlert');
+                        alertEl.style.display = 'block';
+                        alertEl.style.opacity = '1';
+
+                        // Limpia los campos del formulario
+                        this.reset();
+
+                        setTimeout(() => {
+                            const bsAlert = new bootstrap.Alert(alertEl);
+                            bsAlert.close();
+                        }, 2000);
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                        const alertEl = document.getElementById('bootstrapAlert');
+                        alertEl.classList.remove('alert-success');
+                        alertEl.classList.add('alert-danger');
+                        alertEl.innerHTML = "Error al enviar el formulario. Inténtalo de nuevo.";
+                        alertEl.style.display = 'block';
+
+                        setTimeout(() => {
+                            const bsAlert = new bootstrap.Alert(alertEl);
+                            bsAlert.close();
+                        }, 1500);
+                    });
+            });
+        });
+    </script>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script> -->
+
 </body>
 
 </html>

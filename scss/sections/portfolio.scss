@@ -8,87 +8,27 @@
         margin-bottom: 20px; 
     }
 
-    .job1 {
-        display: flex; 
-        align-items: center; 
-        margin-bottom: 20px;
+    .job1, .job2, .job3 {
         color: #f0e5fa; 
         background-color: $primary;
-        height: 40vh;
+        transition: transform 0.3s;
 
-        .job1-img {
-            img {
-                margin-left: 50px; 
-                max-width: 100%; 
-                height: 150px; 
-                width: 250px; 
+        .card-body {
+            h5 {
+                text-decoration: underline;
             }
         }
 
-        .job1-text {
-            margin-left: 80px;
-            margin-right: 17px;
-            p {
-                flex-grow: 1;
-                margin: auto; 
+        .card-footer {
+            text-align: center;
+            
+            a {
+                color: $text;
             }
         }
     }
 
-    .job2 {
-        display: flex; 
-        align-items: center; 
-        flex-direction: row-reverse;
-        margin-bottom: 20px; 
-        color: #f0e5fa; 
-        background-color: $primary;
-        height: 40vh;
-        overflow-x: hidden;
-
-        .job2-img {
-            img {
-                margin-right: 100px;
-                padding-right: 50px;
-                max-width: 100%; 
-                height: 150px; 
-                width: 300px; 
-            }
-        }
-
-        .job2-text {
-            margin-left: 17px;
-            margin-right: 40px;
-            p {
-                flex-grow: 1;
-                margin: auto; 
-            }
-        }
-    }
-
-    .job3 {
-        display: flex; 
-        align-items: center; 
-        margin-bottom: 20px;
-        color: #f0e5fa; 
-        background-color: $primary;
-        height: 40vh;
-
-        .job3-img {
-            img {
-                margin-left: 50px; 
-                max-width: 100%; 
-                height: 150px; 
-                width: 200px; 
-            }
-        }
-
-        .job3-text {
-            margin-left: 80px;
-            margin-right: 17px;
-            p {
-                flex-grow: 1;
-                margin: auto; 
-            }
-        }
+    .job1:hover, .job2:hover, .job3:hover {
+        transform: scale(1.05);
     }
 }

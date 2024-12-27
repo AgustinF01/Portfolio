@@ -10,7 +10,8 @@ header {
 
       .navbar-brand {
         color: $text;
-        margin-right: auto; 
+        margin-right: auto;
+        font-size: 22px; 
       }
 
       .navbar-nav {
@@ -20,6 +21,7 @@ header {
 
         .nav-link {
             color: $text;
+            font-size: 20px;
         }
       }
     }

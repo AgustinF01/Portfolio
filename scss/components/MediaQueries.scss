@@ -1,0 +1,206 @@
+@use '../colors/colors' as *;
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        .navbar {
+            
+            .navbar-nav {
+                flex-direction: column; // Cambia la dirección a columna
+                display: none; // Oculta el menú por defecto
+                &.show {
+                    display: flex; // Muestra el menú cuando está activo
+                }
+
+                .nav-links {
+                    display: none;
+                }
+            }
+    
+            .navbar-toggler {
+                display: block;
+            }
+        }
+
+        .bg-cover {
+            
+            .titles {
+                h1 {
+                    text-align: center !important;
+                    font-size: 50px !important;
+                }
+                h2 {
+                    text-align: center !important;
+                    font-size: 50px !important;
+                }
+            }
+
+            .arrow {
+                margin-top: 45%;
+                span {
+                    width: 4vw !important;
+                    height: 4vw !important;
+                }
+            }
+        }
+
+        .portfolio {
+            margin-top: 80%;
+        }
+
+        .AboutMe {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+
+            .about-title {
+                margin-top: 0 !important;
+                margin-bottom: 15% !important;
+            }
+
+            .about-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: auto;
+
+                .about-text {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                .skill-container {
+                    display: none;
+                }
+            }
+        }
+
+        .contact {
+            .card {
+                width: 90%;
+
+                .socialContainer {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .form-container {
+                width: 90%;
+            }
+        }
+
+        .footer {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        .navbar {
+            
+            .navbar-nav {
+                flex-direction: column; // Cambia la dirección a columna
+                display: none; // Oculta el menú por defecto
+                &.show {
+                    display: flex; // Muestra el menú cuando está activo
+                }
+
+                .nav-links {
+                    display: none;
+                }
+            }
+    
+            .navbar-toggler {
+                display: block;
+            }
+        }
+
+        .bg-cover {
+            
+            .titles {
+                h1 {
+                    //text-align: center !important;
+                    font-size: 80px !important;
+                }
+                h2 {
+                    //text-align: center !important;
+                    font-size: 80px !important;
+                }
+            }
+
+            .arrow {
+                margin-top: 25%;
+                span {
+                    width: 4vw !important;
+                    height: 4vw !important;
+                }
+            }
+        }
+
+        .portfolio {
+            margin-top: 50%;
+        }
+
+        .AboutMe {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+
+            .about-title {
+                margin-top: 0 !important;
+                margin-bottom: 15% !important;
+            }
+
+            .about-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: auto;
+
+                .about-text {
+                    p {
+                        font-size: 23px;
+                    }
+                }
+
+                .skill-container {
+                    display: none;
+                }
+            }
+        }
+
+        .contact {
+            .card {
+                width: 90%;
+
+                .socialContainer {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .form-container {
+                width: 90%;
+            }
+        }
+
+        .footer {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+@media (min-width: 1281px) and (max-width: 1440px) {}
+
+@media (min-width: 1441px) {}
