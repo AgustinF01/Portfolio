@@ -1,9 +1,6 @@
 @use './components/NavBar';
 @use './colors/colors' as *;
 @use './sections/portfolio';
-@use './sections/skills';
-@use './components/ScrollToTopBtn';
-@use './components/Whatsapp';
 @use './sections/contact';
 @use './sections/AboutMe';
 @use './components/AnimatedBackground';
@@ -114,16 +111,16 @@ body {
 
   }
 
-  .aboutMe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $primary;
-    margin: 0 5% 0 5%;
+  // .aboutMe {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   background-color: $primary;
+  //   margin: 0 5% 0 5%;
 
-    img {
-      width: 200px;
-      height: 200px;
-    }
-  }
+  //   img {
+  //     width: 200px;
+  //     height: 200px;
+  //   }
+  // }
 }

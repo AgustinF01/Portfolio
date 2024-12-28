@@ -72,7 +72,14 @@
                 }
 
                 .skill-container {
-                    display: none;
+                    //display: none;
+                    .container {
+                        width: 330px;
+                        
+                        .skill-box {
+                            animation: none;
+                        }
+                    }
                 }
             }
         }
@@ -123,6 +130,93 @@
             
             .titles {
                 h1 {
+                    text-align: center !important;
+                    font-size: 50px !important;
+                }
+                h2 {
+                    text-align: center !important;
+                    font-size: 50px !important;
+                }
+            }
+
+            .arrow {
+                margin-top: 30%;
+                span {
+                    width: 4vw !important;
+                    height: 4vw !important;
+                }
+            }
+        }
+
+        .portfolio {
+            margin-top: 60%;
+        }
+
+        .AboutMe {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            height: 50%;
+
+            .about-title {
+                margin-top: 0 !important;
+                margin-bottom: 15% !important;
+            }
+
+            .about-info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                height: auto;
+
+                .about-text {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                .skill-container {
+                    .container {
+                        width: 450px;
+                        
+                        .skill-box {
+                            animation: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            .card {
+                width: 90%;
+
+                .socialContainer {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .form-container {
+                width: 90%;
+            }
+        }
+
+        .footer {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+
+        .bg-cover {
+            
+            .titles {
+                h1 {
                     //text-align: center !important;
                     font-size: 80px !important;
                 }
@@ -143,6 +237,16 @@
 
         .portfolio {
             margin-top: 50%;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                
+                .job1, .job2, .job3 {
+                    transition: none !important;
+                    transform: none !important;
+                }
+            }
         }
 
         .AboutMe {
@@ -171,7 +275,13 @@
                 }
 
                 .skill-container {
-                    display: none;
+                    .container {
+                        width: 850px;
+                        
+                        .skill-box {
+                            animation: none;
+                        }
+                    }
                 }
             }
         }
@@ -197,10 +307,14 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {}
-
-@media (min-width: 1025px) and (max-width: 1280px) {}
-
-@media (min-width: 1281px) and (max-width: 1440px) {}
-
-@media (min-width: 1441px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        .AboutMe {
+            .about-info {
+                .about-text {
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}
